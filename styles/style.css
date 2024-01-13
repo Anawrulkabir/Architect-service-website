@@ -1,6 +1,80 @@
 /* Work sans google font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&display=swap');
 
+/* Universal Selector */
 * {
   font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+
+/* Variable color */
+:root {
+  --Dark-01: #131313;
+  --Dark-02: #424242;
+  --Dark-03: #727272;
+
+  --Orange: #ff900e;
+  --White: #fff;
+}
+
+/* hearder style */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 40px 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  color: var(--Dark-01);
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.g3-title {
+  color: var(--Orange);
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style-type: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--Dark-02);
+}
+.banner-image {
+  width: 100%;
+  border-radius: 10px;
+}
+.banner-title {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--Dark-01);
+  font-weight: 700;
+  margin-top: 100px;
+}
+.banner-description {
+  margin: 32px 0px;
+  text-align: center;
+}
+.banner-btn {
+  height: 64px;
+  width: 180px;
+  border-radius: 8px;
+  color: var(--White);
+  background-color: var(--Orange);
+  border: none;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+.btn-div {
+  display: flex;
 }
